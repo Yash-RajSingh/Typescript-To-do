@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/core@latest/dist/css/tabler.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/iconfont/tabler-icons.min.css"
+    />
+  </head>
+  <body>
+    <div class="page">
+      <header class="navbar navbar-dark">
+        <div class="container-xl">
+          <div class="col">
+                <h2 class="page-title">
+                  Typescript To-Do
+                </h2>
+                <div class="page-pretitle">
+                  A To-Do list made with Typescipt
+                </div>
+              </div>
+        </div>
+      </header>
+      <div class="container mt-4">
+        <div class="col-md-3 card w-33 p-3">
+          <div class="mb-2">
+            <label class="form-label">Add To-Do</label>
+            <div class="row g-2">
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control mt-2"
+                  placeholder="To Do…"
+                  id="task"
+                />
+                <input
+                  class="form-control mb-2 mt-2"
+                  type="date"
+                  placeholder="Select a date"
+                  id="deadline"
+                />
+              </div>
+              <div class="text-center mt-2">
+                <span class="btn btn-primary" id="adder">
+                  <i class="ti ti-circle-plus px-2"></i>
+                  Add
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-3">
+        <div
+          class="row row-cards justify-content-lg-between"
+          id="response"
+        ></div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@tabler/core@latest/dist/js/tabler.min.js"></script>
+    <script type="module" src="scripts/index.js"></script>
+  </body>
+</html>
