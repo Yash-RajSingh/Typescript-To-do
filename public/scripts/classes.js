@@ -1,9 +1,11 @@
 class ToDo {
-    constructor(task, status, deadline) {
+    constructor(id, task, status, deadline) {
+        this.id = id;
         this.task = task;
         this.status = status;
         this.deadline = deadline;
-        this.task = task,
+        this.id = id,
+            this.task = task,
             this.status = status,
             this.deadline = deadline;
     }
